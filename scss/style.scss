@@ -170,7 +170,7 @@ margin-left: 0;
 					border-radius: 30px;
 					background: #bcbcca38;
 					position: relative;
-					margin-right: 10px;
+					// margin-right: 10px;
 				}
 			
 				.notification{
@@ -188,7 +188,7 @@ margin-left: 0;
 				
 					}
 					@include breakpoint(md){
-						
+						right: 0px;
 					}
 					@include breakpoint(lg){
 						background-color: #e80b42;
@@ -198,7 +198,7 @@ margin-left: 0;
 						color: #fff;
 						width: 19px;
 						top: -7px;
-						right: 12px;
+						right: 0;
 						line-height: 10px;
 						font-size: 10px;
 					}
@@ -219,7 +219,8 @@ margin-left: 0;
 				
 			}
 			@include breakpoint(md){
-				
+				width: 75%;
+				top: -6px;
 			}
 			@include breakpoint(lg){
 				border-radius: 30px;
@@ -227,26 +228,39 @@ margin-left: 0;
 				position: relative;
 				top: -6px;
 			}
+			&:after{
+				content: "\F0A6E";
+				display: inline-block;
+				position: absolute;
+				font: normal normal normal 24px/1 "Material Design Icons";
+				font-size: inherit;
+				text-rendering: auto;
+				line-height: inherit;
+				-webkit-font-smoothing: antialiased;
+				color:#2d2e2f;
+
+			}
 		}
 		.dropdown-toggle::after {
-			display: block;
-			position: absolute;
-			top: 58%;
-			right: -6px;
-			transform: translateY(-50%);
-			@include breakpoint(sm){
+			
+			display: none;
+			// position: absolute;
+			// top: 58%;
+			// right: -6px;
+			// transform: translateY(-50%);
+			// @include breakpoint(sm){
 				
-			}
-			@include breakpoint(md){
+			// }
+			// @include breakpoint(md){
 				
-			}
-			@include breakpoint(lg){
-				display: block;
-				position: absolute;
-				top: 43%;
-				right: -1px;
-				transform: translateY(-50%);
-			}
+			// }
+			// @include breakpoint(lg){
+			// 	display: none;
+			// 	position: absolute;
+			// 	top: 43%;
+			// 	right: -1px;
+			// 	transform: translateY(-50%);
+			// }
 		}
 	}
 		
@@ -443,12 +457,13 @@ width: 64%;
     padding: 24px;
     font-size: 1.1em;
 	display: block;
+	color: #282f2d;
 	// margin-top: 12px;
 }
 
 #sidebar ul li a:hover {
     color: #fff ;
-    background:  #7386D5;
+    background: #6969a2;
 }
 
 #sidebar ul li a i {
@@ -463,7 +478,7 @@ width: 64%;
 
 #sidebar ul li.active{
 
-	background: #6d7fcc;
+	background: #6969a2;
 	a{
 		color: #fff;
 	}
@@ -598,11 +613,11 @@ a.article:hover {
 				padding: 14px;
 				box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15), 0 3px 17px 0 rgba(0, 0, 0, 0.06);
 				h3{
-					color:#8e9694;
+					color:#282f2d;
 					font-size: 16px;
 					margin-bottom: 22px;
 					@include breakpoint(sm){
-						color:#8e9694;
+						color:#282f2d;
 						font-size: 15px;
 						margin-bottom: 22px;	
 					}
@@ -610,7 +625,7 @@ a.article:hover {
 						
 					}
 					@include breakpoint(lg){
-						color:#8e9694;
+						color:#282f2d;
 						font-size: 16px;
 						margin-bottom: 22px;
 					}
@@ -619,24 +634,24 @@ a.article:hover {
 					display: flex;
 						justify-content: space-between;
 						.ti-files{
-						color:#7681a7;
+						color:#2cb8e2;
 						font-size: 28px;
 						}
 						.ti-package{
-						color: #bd91e6;
+						color: #8d13ff;
 						font-size: 28px;
 						}
 						.ti-user{
 						font-size: 28px;
-						color: #82bdbf;
+						color: #3ac538;
 						}
 						.ti-book{
 						font-size: 28px;
-						color: #5e90ea;
+						color:#f11753;
 						}
 						.number{
 						font-size: 22px;
-						color: #3e3e3e
+						color:#383535;
 						}
 				}
 			}
