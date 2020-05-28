@@ -198,11 +198,52 @@ body {
     max-width: 300px;
     background: #fff;
     color: #7386D5;
-    transition: all 0.3s; }
+    transition: all 0.5s;
+    display: none; }
+    @media (min-width: 768px) {
+      .wrapper #sidebar {
+        min-width: 300px;
+        max-width: 300px;
+        background: #fff;
+        color: #7386D5;
+        transition: all 0.5s;
+        display: block; } }
+    @media (min-width: 992px) {
+      .wrapper #sidebar {
+        min-width: 300px;
+        max-width: 300px;
+        background: #fff;
+        color: #7386D5;
+        transition: all 0.5s;
+        display: block; } }
+    @media (min-width: 1200px) {
+      .wrapper #sidebar {
+        min-width: 300px;
+        max-width: 300px;
+        background: #fff;
+        color: #7386D5;
+        transition: all 0.5s;
+        display: block; } }
   .wrapper #sidebar.active {
     min-width: 126px;
     max-width: 126px;
-    text-align: center; }
+    text-align: center;
+    display: block; }
+    @media (min-width: 768px) {
+      .wrapper #sidebar.active {
+        min-width: 126px;
+        max-width: 126px;
+        text-align: center; } }
+    @media (min-width: 992px) {
+      .wrapper #sidebar.active {
+        min-width: 126px;
+        max-width: 126px;
+        text-align: center; } }
+    @media (min-width: 1200px) {
+      .wrapper #sidebar.active {
+        min-width: 126px;
+        max-width: 126px;
+        text-align: center; } }
   .wrapper #sidebar.active .profile-info {
     display: none; }
   .wrapper #sidebar.active .sidebar-header h3,
@@ -505,3 +546,40 @@ body {
           content: "\f13e";
           color: #2d2e2f;
           padding-right: 20px; }
+
+.dataTables_wrapper {
+  margin-top: 40px;
+  position: relative;
+  clear: both;
+  zoom: 1; }
+  .dataTables_wrapper .paginate_button:active {
+    outline: none;
+    background-color: #453ca5; }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #4c5faf;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #3b4365; }
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
